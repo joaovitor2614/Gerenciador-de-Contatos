@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador de Contatos</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <div class="header-wrapper">
+            <h1>Gerenciador de Contatos</h1>
+            <h3>Organize sua agenda, organize sua vida</h3>
+        </div>
+       
+    </header>
+    <div id="backdrop" class="disable-modal"></div>
+   <div id="wrapper-new-contact-painel" class="disable-modal" >
+    <div class="addContactPainel">
+        <p>Novo Contato</p>
+        <div class="wrapper-add">
+            <h4>Nome</h4>
+            <input type="text" id="contactNameInput" placeholder="Insira o nome..">
+            <h4>Telefone</h4>
+            <input type="text" id="contactPhoneInput" placeholder="Insira o telefone..">
+            <h4>Endereço</h4>
+            <input type="text" id="contactAddressInput" placeholder="Insira o endereço..">
+        </div>
+        <div class="button-wrapper">
+            
+            <button id="addBtn">Adicionar</button><button id="cancelBtn">Cancelar</button>
+        </div>
+   </div>
+    
+        
+    </div>
+    <div class="contact-list">
+        <div class="contact-actions">
+            <div id="openAddContactPainel">Adicionar novo contato</div><button  class="rmv-all-btn" id="removeAllBtn">Remover tudo</button>
+        </div>
+        <div class="contact-table">
+            
+        </div>    
+    </div>
+</body>
+<script src="main.js"></script>
+</html>
